@@ -4,7 +4,7 @@
 #
 Name     : gnome-screenshot
 Version  : 3.22.0
-Release  : 1
+Release  : 2
 URL      : https://download.gnome.org/core/3.22/3.22.0/sources/gnome-screenshot-3.22.0.tar.xz
 Source0  : https://download.gnome.org/core/3.22/3.22.0/sources/gnome-screenshot-3.22.0.tar.xz
 Summary  : No detailed summary available

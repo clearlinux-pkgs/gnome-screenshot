@@ -4,9 +4,9 @@
 #
 Name     : gnome-screenshot
 Version  : 3.22.0
-Release  : 2
-URL      : https://download.gnome.org/core/3.22/3.22.0/sources/gnome-screenshot-3.22.0.tar.xz
-Source0  : https://download.gnome.org/core/3.22/3.22.0/sources/gnome-screenshot-3.22.0.tar.xz
+Release  : 3
+URL      : https://download.gnome.org/sources/gnome-screenshot/3.22/gnome-screenshot-3.22.0.tar.xz
+Source0  : https://download.gnome.org/sources/gnome-screenshot/3.22/gnome-screenshot-3.22.0.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -18,6 +18,7 @@ BuildRequires : gettext
 BuildRequires : intltool
 BuildRequires : perl(XML::Parser)
 BuildRequires : pkgconfig(glib-2.0)
+BuildRequires : pkgconfig(gtk+-3.0)
 BuildRequires : pkgconfig(libcanberra-gtk3)
 BuildRequires : pkgconfig(libxml-2.0)
 BuildRequires : pkgconfig(x11)
@@ -63,7 +64,11 @@ locales components for the gnome-screenshot package.
 %setup -q -n gnome-screenshot-3.22.0
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
+export SOURCE_DATE_EPOCH=1500836473
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -71,10 +76,11 @@ make V=1  %{?_smp_mflags}
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
+export SOURCE_DATE_EPOCH=1500836473
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-screenshot
@@ -98,6 +104,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc /usr/share/man/man1/*
 
-%files locales -f gnome-screenshot.lang 
+%files locales -f gnome-screenshot.lang
 %defattr(-,root,root,-)
 

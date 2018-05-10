@@ -4,7 +4,7 @@
 #
 Name     : gnome-screenshot
 Version  : 3.26.0
-Release  : 5
+Release  : 6
 URL      : https://download.gnome.org/sources/gnome-screenshot/3.26/gnome-screenshot-3.26.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-screenshot/3.26/gnome-screenshot-3.26.0.tar.xz
 Summary  : No detailed summary available

@@ -4,7 +4,7 @@
 #
 Name     : gnome-screenshot
 Version  : 3.30.0
-Release  : 8
+Release  : 9
 URL      : https://download.gnome.org/sources/gnome-screenshot/3.30/gnome-screenshot-3.30.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-screenshot/3.30/gnome-screenshot-3.30.0.tar.xz
 Summary  : No detailed summary available

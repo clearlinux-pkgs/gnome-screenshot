@@ -1,6 +1,39 @@
-GNOME Screenshot 3.36.0 - 10th March 2020
-=========================================
-- Translation updates
+=============================================
+GNOME Screenshot 3.38.0 - 10th September 2020
+=============================================
+
+- Translation updates:
+  Basque, Brazilian Portuguese, British English, Catalan, Chinese (China),
+  Croatian, Czech, Danish, Dutch, Finnish, French, Friulian, Galician, German,
+  Green, Hungarian, Indonesian, Italian, Japanese, Kazakh, Korean, Lithuanian,
+  Persian,Polish, Portuguese, Romanian, Serbian, Slovak, Slovenian, Spanish,
+  Swedish, Turkish, Ukrainian
+
+==========================================
+GNOME Screenshot 3.37.90 - 7th August 2020
+==========================================
+
+- Port to libhandy
+- CI updates [Jordan Petridis]
+- Update screenshots in appdata
+- Translation updates:
+  Brazilian Portuguese, Catalan, Chinese (China), Chinese (Taiwan), Friulian,
+  German, Greek, Indonesian, Kazakh, Kurdish Sorani, Lithuanian, Romanian,
+  Spanish, Swedish, Turkish
+
+===========================================
+GNOME Screenshot 3.37.1 - 25th April 2020
+===========================================
+
+- Completely redesign the UI [!7, Christopher Davis]
+- Allow taking area screenshots with timeout [!17, Philipp Wolfer]
+- Deprecate --include-border and --remove-border options
+- Deprecate --border-effect option
+- Add -Dx11 build option to allow building without X11 [!27]
+- Cleanups and deprecation fixes [!18, !20, !21, !23, !29, !30]
+- Translation updates:
+  Basque, British English, French, Galician, Hebrew, Japanese, Malay,
+  Persian, Slovak, Ukrainian
 
 GNOME Screenshot 3.34.0 - 14th October 2019
 ===========================================

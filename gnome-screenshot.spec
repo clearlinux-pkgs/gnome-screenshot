@@ -4,7 +4,7 @@
 #
 Name     : gnome-screenshot
 Version  : 3.38.0
-Release  : 16
+Release  : 17
 URL      : https://download.gnome.org/sources/gnome-screenshot/3.38/gnome-screenshot-3.38.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-screenshot/3.38/gnome-screenshot-3.38.0.tar.xz
 Summary  : No detailed summary available

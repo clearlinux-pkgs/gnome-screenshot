@@ -4,7 +4,7 @@
 #
 Name     : gnome-screenshot
 Version  : 41.0
-Release  : 19
+Release  : 20
 URL      : https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
 Summary  : No detailed summary available

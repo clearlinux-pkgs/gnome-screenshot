@@ -4,7 +4,7 @@
 #
 Name     : gnome-screenshot
 Version  : 41.0
-Release  : 21
+Release  : 22
 URL      : https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
 Summary  : No detailed summary available
@@ -84,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1637015104
+export SOURCE_DATE_EPOCH=1664150049
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -98,7 +98,7 @@ ninja -v -C builddir
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gnome-screenshot
-cp %{_builddir}/gnome-screenshot-41.0/COPYING %{buildroot}/usr/share/package-licenses/gnome-screenshot/68c94ffc34f8ad2d7bfae3f5a6b996409211c1b1
+cp %{_builddir}/gnome-screenshot-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gnome-screenshot/68c94ffc34f8ad2d7bfae3f5a6b996409211c1b1 || :
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang gnome-screenshot
 
